@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Lobster', cursive;
+}
+
+/* Landing Page*/
+
+.header___first {
+  width: 100wh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  height: 30vh;
+  background-color: #8c52ff;
+  border-bottom: 10px #38b6ff solid;
+  border-radius: 0 0 20px 0px;
+}
+
+.header__first--Logo {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  min-height: max-content;
+}
+
+
+.main__first{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lobster', cursive;
+  height: 50vh;
+  min-height: max-content;
+  gap: 25px;
+}
+
+.main__first h1 {
+  color: black;
+  text-shadow: 1.5px 1.5px #38b6ff;
+}
+
+.main__first h2 {
+  color: black;
+  text-shadow: 1.5px 1.5px #38b6ff;
+}
+
+/* boton de descarga  Sacado de internet - Se le agrego el ICO que no lo tenia*/
+.footer__first {
+  height: 20vh;
+  background-color: #8c52ff;
+  border-top: 10px #38b6ff solid;
+  min-height: max-content;
+  border-radius: 20px 0px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__first--button {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #38b6ff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.footer__first .footer__first--button:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+
+
+.footer__first--button:active {
+  color: #000
+}
+
+.footer__first--button:active:after {
+  background: transparent;
+}
+
+.footer__first--button:hover:before {
+  opacity: 1;
+}
+
+.footer__first--button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.footer__first--button--ico {
+  margin-right: 5%;
+  width: 25px;
+  height: 25px;
+}
+
+
+/* fin Landing Page*/
+
+
+/* Precios */
+.main__third {
+  width: 100%;
+  height: 100vh;
+  background-color: #8c52ff;
+}
+
+
+
+/* Tarjetas Sacadas de internet, se modificaron los SVG para que tuvieran un un poco mas de relevancia*/
+.card {
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 50px 20px 20px 20px;
+  width: calc(33.3333% - 40px);
+  /* 1/3 minus the margins (20+20) */
+  padding: 20px;
+  text-align: center;
+  color: black;
+  float: left;
+  font-size: xx-large;
+}
+
+
+
+.card:nth-child(2) {
+  margin: 20px 0px;
+  width: 33.3333%;
+  padding: 50px 20px;
+}
+
+
+
+.card .title {
+  font-size: 25px;
+}
+
+.card .icon {
+  margin: 50px 0;
+}
+
+.card .icon svg {
+  width: 100px;
+  height: 100px;
+}
+
+.card .icon svg path {
+  fill: #8c52ff;
+}
+
+.card .features ul {
+  padding: 0;
+  margin: 20px 0 50px 0;
+  list-style-type: none;
+}
+
+.card .features ul li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.card .btn {
+  display: block;
+  background: #8c52ff;
+  color: white;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.9);
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+
+.card .btn:hover {
+  background: #38b6ff;
+}
+
+/* funciones se las tarjetas son de internet y el multimedia es mio*/
+
+.main__third {
+  color: black;
+  text-shadow: 1.5px 1.5px #38b6ff;
+}
+
+.main__third h1,
+h3 {
+  background-color: white;
+  max-width: max-content;
+  border-radius: 25px;
+  padding: 7px;
+  margin-bottom: 5px;
+  margin-left: 10%;
+}
+
+.header__second {
+  width: 100wh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  height: 15%;
+  background-color: #8c52ff;
+  border-bottom: 10px#38b6ff solid;
+  border-radius: 0 0 20px 0px;
+  font-size: xx-large;
+}
+
+.main__second {
+  height: 100%;
+
+}
+
+.main__second h3 {
+  background-color: #8c52ff;
+}
+
+.cards {
+  position: relative;
+  padding: 80px 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cards.style-1 {
+  background: white;
+}
+
+.cards .col {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex: 0 0 33.333%;
+  -ms-flex: 0 0 33.333%;
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  padding: 0 30px;
+}
+
+.card1 {
+  position: relative;
+  background-color: #38b6ff;
+  border-radius: 8px;
+  overflow: hidden;
+  color: black;
+  text-shadow: 1.5px 1.5px #8c52ff;
+
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-title {
+  position: relative;
+  padding: 20px 25px 5px;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+
+
+
+.card:hover .card-title:before {
+  opacity: 0.8;
+  transform: scale(0.6);
+}
+
+.card-description {
+  padding: 5px 25px 20px;
+}
+
+
+.footer__second {
+  height: 10vh;
+  background-color: #8c52ff;
+  border-top: 10px #38b6ff solid;
+}
+
+/* fin funciones */
+
+.main4 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box__form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px #38b6ff solid;
+  height: 300px;
+  width: 30%;
+  padding: 1%;
+  background-color: #38b6ff;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.form__email {
+  border-radius: 30px;
+  background-color: white;
+  width: 100%;
+  height: 25px;
+
+}
+
+.form__button {
+  border-radius: 30px;
+  background-color: white;
+  width: 250px;
+  height: 25px;
+}
+
+
+.form__textarea {
+  width: 100%;
+  height: 100%;
+
+}
+
+.footer3 {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #8c52ff;
+  width: 100%;
+  border-top: 10px #38b6ff solid;
+  border-radius: 0 20px 0 0px;
+  color: #38b6ff;
+}
