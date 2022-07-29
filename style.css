@@ -235,6 +235,7 @@ h3 {
 .main__second {
   scroll-snap-align: start;
   height: 100vh;
+  width: 100vh;
 }
 
 .main__second--h3 {
@@ -280,16 +281,15 @@ h3 {
 
 .cards_style-1 {
   background: white;
-  height: 80vh;
+  display: flex;
+flex-direction: row;
 }
 
 .cards .col {
   -webkit-flex-basis: 0;
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
+
   flex-grow: 1;
   -webkit-flex: 0 0 33.333%;
   -ms-flex: 0 0 33.333%;
@@ -305,7 +305,7 @@ h3 {
   overflow: hidden;
   color: black;
   text-shadow: 1px 1px #553791;
-
+width: 30%;
 }
 
 
@@ -400,111 +400,3 @@ p {
 }
 
 
-/* Teléfonos */
-@media  (max-width:1060px) {
-
-  .section__mobile--second{
-    min-width: 403px;
-  }
-  .main__third {
-    width: 100%;
-    height: 100vh;
-    background-color: #553791;
-  }
-
-  .section__mobile--second {
-
-    display: flex;
-    flex-direction: column;
-  }
-
-
-  /* tarjetas precios*/
-  .card {
-    display: flex;
-    flex-direction: row;
-    background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-    width: 87%;
-    height: 15vh;
-    padding: 1px;
-    text-align: center;
-    color: black;
-    font-size: small;
-    justify-content:space-around;
-  }
-
-  .card .icon {
-    width: 0px;
-    height: 0px;
-  }
-
-  .card .title {
-    font-size: 25px;
-    padding-top: 35px;
-    padding-left: 10px;
-  }
-
-
-  .card .icon svg path {
-    fill: white;
-  }
-
-  .card .features ul {
-    float: right;
-    padding: 10%;
-    margin: 0px;
-    list-style-type: none;
-  }
-
-  .card .features ul li {
-    margin: 10px 0;
-    font-size: 10px;
-  }
-
-  .card .btn {
-    display: block;
-    background: #553791;
-    color: white;
-    padding: 10px 20px;
-    margin: 1px 0;
-    border-radius: 20px;
-    transition: all 200ms ease-in-out;
-    text-decoration: none;
-    width: 25vh;
-    height: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .card .btn:hover {
-    background: #38b6ff;
-  }
-
-  
-
-  .form__textarea {
-    width: 100%;
-    height: 100%;
-    resize: none;
-  
-  }
-
-  .box__form {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    border: 1px #38b6ff solid;
-    height: 300px;
-    width: 70%;
-    padding: 1%;
-    background-color: #38b6ff;
-    gap: 10px;
-    align-items: center;
-  }
-
-
-}
