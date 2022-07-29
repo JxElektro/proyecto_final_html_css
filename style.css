@@ -277,7 +277,7 @@ h3 {
   flex-wrap: wrap;
 }
 
-.cards.style-1 {
+.cards_style-1 {
   background: white;
   height: 80vh;
 }
@@ -399,45 +399,90 @@ p {
 
 
 /* Teléfonos */
-@media only screen and (max-width: 575px) {
+@media (min-width: 403px) and (max-width:953px) {
 
-.main__second{
-  text-align: center;
-}
-
-  .cards {
+  .section__mobile--second{
+    min-width: 403px;
+  }
+  .main__third {
+    width: 100%;
+    height: 100vh;
+    background-color: #553791;
    
   }
 
-  .cards.style-1 {
-   
+  .section__mobile--second {
+
+    display: flex;
+    flex-direction: column;
   }
 
-  .cards .col {
-   
-  }
 
-  .card1 {
-    position: relative;
-    background-color: #38b6ff;
-    border-radius: 20px;
-    overflow: hidden;
+  /* tarjetas precios*/
+  .card {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    width: 87%;
+    height: 15vh;
+    padding: 1px;
+    text-align: center;
     color: black;
-    text-shadow: 1px 1px #553791;
+    font-size: small;
+
 
   }
 
+  .card .icon {
+    width: 0px;
+    height: 0px;
+  }
+
+  .card .title {
+    font-size: 25px;
+    padding-top: 10%;
+    padding-left: 10px;
+  }
+
+
+  .card .icon svg path {
+    fill: white;
+  }
+
+  .card .features ul {
+    float: left;
+    padding: 0%;
+    margin: 10px 0 25px 0;
+    list-style-type: none;
+  }
+
+  .card .features ul li {
+    margin: 10px 0;
+    font-size: 10px;
+  }
+
+  .card .btn {
+    display: block;
+    background: #553791;
+    color: white;
+    padding: 10px 20px;
+    margin: 1px 0;
+    border-radius: 20px;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+    width: 150px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .card .btn:hover {
+    background: #38b6ff;
+  }
+  
 }
-
-
-.card-title {
-  position: relative;
-  padding: 2px 25px 5px;
-  font-size: 2em;
-
-}
-
-.card-description {
-
-}
-
+  /* Cards con gif */
