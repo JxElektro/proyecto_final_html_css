@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px greenyellow solid;
 
 }
 
 body {
   font-family: 'Lobster', cursive;
-  min-width: 520px;
 }
 
 /* Landing Page*/
@@ -25,7 +25,7 @@ body {
   border-radius: 0 0 20px 0px;
 }
 
-.header__first--Logo {
+.header__first__logo {
   width: 175px;
   height: 175px;
   border-radius: 50%;
@@ -43,6 +43,7 @@ body {
   height: 50vh;
   min-height: max-content;
   gap: 25px;
+  font-size: xx-large;
 
 }
 
@@ -225,7 +226,7 @@ body {
 .main__third h1,
 h3 {
   background-color: white;
-  max-width: max-content;
+  width: 100vh;
   border-radius: 25px;
   margin-top: 10px;
   margin-left: 10%;
@@ -235,7 +236,7 @@ h3 {
 .main__second {
   scroll-snap-align: start;
   height: 100vh;
-  width: 100vh;
+  width: 100%;
 }
 
 .main__second--h3 {
@@ -249,7 +250,7 @@ h3 {
   justify-content: center;
   align-items: center;
   padding: 1%;
-  height: 20vh;
+  height: 30vh;
   background-color: #553791;
   border-bottom: 10px#38b6ff solid;
   border-radius: 0 0 20px 0px;
@@ -277,27 +278,24 @@ h3 {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 100vh;
 }
 
 .cards_style-1 {
   background: white;
   display: flex;
-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center
 }
 
-.cards .col {
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
 
-  flex-grow: 1;
-  -webkit-flex: 0 0 33.333%;
-  -ms-flex: 0 0 33.333%;
-  flex: 0 0 33.333%;
-  max-width: 33.333%;
-  padding: 0 30px;
+
+.col{
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
-
 .card1 {
   position: relative;
   background-color: #38b6ff;
@@ -305,7 +303,8 @@ flex-direction: row;
   overflow: hidden;
   color: black;
   text-shadow: 1px 1px #553791;
-width: 30%;
+  width: 100%;
+  margin: 1%;
 }
 
 
@@ -391,12 +390,8 @@ p {
   padding: 5px;
 }
 
-
-
 .container {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
+  overflow-y: scroll ;
+  height: 100%;
 }
-
-
