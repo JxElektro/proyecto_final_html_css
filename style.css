@@ -12,7 +12,7 @@ body {
 /* Landing Page*/
 
 .header__first {
-  width: 100% ;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,7 +254,8 @@ h3 {
   font-size: large;
   color: black;
 }
-.header__second h1{
+
+.header__second h1 {
   background-color: white;
   border-radius: 40px;
   padding: 1%;
@@ -370,7 +371,7 @@ h3 {
 .footer_fourth {
   height: 20vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #553791;
@@ -378,12 +379,14 @@ h3 {
   border-top: 10px #38b6ff solid;
   border-radius: 0 20px 0 0px;
   color: black;
+  text-align: center;
 }
 
-.footer_fourth h1, p {
-background-color: white;
-border-radius: 20px;
-padding: 5px;
+.footer_fourth h1,
+p {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 
@@ -393,3 +396,48 @@ padding: 5px;
   overflow-y: scroll;
   height: 100vh;
 }
+
+
+/* Teléfonos */
+@media only screen and (max-width: 575px) {
+
+.main__second{
+  text-align: center;
+}
+
+  .cards {
+   
+  }
+
+  .cards.style-1 {
+   
+  }
+
+  .cards .col {
+   
+  }
+
+  .card1 {
+    position: relative;
+    background-color: #38b6ff;
+    border-radius: 20px;
+    overflow: hidden;
+    color: black;
+    text-shadow: 1px 1px #553791;
+
+  }
+
+}
+
+
+.card-title {
+  position: relative;
+  padding: 2px 25px 5px;
+  font-size: 2em;
+
+}
+
+.card-description {
+
+}
+
