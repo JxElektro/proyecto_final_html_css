@@ -7,7 +7,9 @@
 
 body {
   font-family: 'Lobster', cursive;
-  min-width: 520px;
+  min-width: 760px;
+  width: auto !important;
+  width: 760px;
 }
 
 /* Landing Page*/
@@ -20,19 +22,24 @@ body {
   align-items: center;
   padding: 5%;
   height: 30vh;
-  background-color: #553791;
+  background-color: #43277a;
   border-bottom: 10px #38b6ff solid;
   border-radius: 0 0 20px 0px;
-}
-
-.header__first--Logo {
-  width: 175px;
-  height: 175px;
-  border-radius: 50%;
-  min-height: max-content;
   scroll-snap-align: start;
 }
 
+.header__first--Logo {
+  width: 250px;
+  height: 250px;
+  border-radius: 100px;
+  min-height: max-content;
+
+}
+
+.main__fourth img {
+  width: 250px;
+  height: 140px;
+}
 
 .main__first {
   display: flex;
@@ -47,19 +54,20 @@ body {
 }
 
 .main__first h1 {
-  color: black;
+  color: #43277a;
   text-shadow: 1.5px 1.5px #38b6ff;
+  font-size: 55px;
 }
 
 .main__first h2 {
-  color: black;
+  color: #43277a;
   text-shadow: 1.5px 1.5px #38b6ff;
+  font-size: 35px;
 }
 
-/* boton de descarga  Sacado de internet - Se le agrego el ICO que no lo tenia*/
 .footer__first {
   height: 20vh;
-  background-color: #553791;
+  background-color: #43277a;
   border-top: 10px #38b6ff solid;
   min-height: max-content;
   border-radius: 20px 0px 0 0;
@@ -69,93 +77,14 @@ body {
   align-items: center;
 }
 
-.footer__first--button {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: #38b6ff;
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  border-radius: 40px;
-}
-
-.footer__first .footer__first--button:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-}
-
-
-
-.footer__first--button:active {
-  color: #000
-}
-
-.footer__first--button:active:after {
-  background: transparent;
-}
-
-.footer__first--button:hover:before {
-  opacity: 1;
-}
-
-.footer__first--button:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 400% 0;
-  }
-
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.footer__first--button--ico {
-  margin-right: 5%;
-  width: 25px;
-  height: 25px;
-}
-
-
 /* fin Landing Page*/
-
 
 /*  3 era pag Precios */
 .main__third {
   width: 100%;
   height: 100vh;
-  background-color: #553791;
+  background-color: #43277a;
 }
-
-
 
 /* tarjetas precios*/
 .card {
@@ -167,25 +96,24 @@ body {
   /* 1/3 minus the margins (20+20) */
   padding: 5px;
   text-align: center;
-  color: black;
+  color: #43277a;
   float: left;
   font-size: xx-large;
   height: 70vh;
 }
 
-
 .card .title {
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .card .icon svg {
-  width: 75px;
-  height: 75px;
+  width: 140px;
+  height: 140px;
   padding-top: 20px;
 }
 
 .card .icon svg path {
-  fill: #553791;
+  fill: #43277a;
 }
 
 .card .features ul {
@@ -196,12 +124,12 @@ body {
 
 .card .features ul li {
   margin: 10px 0;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .card .btn {
   display: block;
-  background: #553791;
+  background: #43277a;
   color: white;
   padding: 10px 20px;
   margin: 20px 0;
@@ -217,12 +145,12 @@ body {
 /* funciones se las tarjetas gif */
 
 .main__third {
-  color: black;
+  color: #43277a;
   text-shadow: 1px 1px #38b6ff;
   scroll-snap-align: start;
 }
 
-.main__third h1,
+.main__third h2,
 h3 {
   background-color: white;
   max-width: max-content;
@@ -249,21 +177,21 @@ h3 {
   align-items: center;
   padding: 1%;
   height: 20vh;
-  background-color: #553791;
+  background-color: #43277a;
   border-bottom: 10px#38b6ff solid;
   border-radius: 0 0 20px 0px;
   font-size: large;
-  color: black;
+  color: #43277a;
 }
 
-.header__second h1 {
+.header__second h2 {
   background-color: white;
   border-radius: 40px;
   padding: 1%;
 }
 
 .main__second h3 {
-  background-color: #553791;
+  background-color: #43277a;
 }
 
 .cards {
@@ -281,6 +209,7 @@ h3 {
 .cards_style-1 {
   background: white;
   height: 80vh;
+
 }
 
 .cards .col {
@@ -296,15 +225,17 @@ h3 {
   flex: 0 0 33.333%;
   max-width: 33.333%;
   padding: 0 30px;
+  margin-top: 20px;
 }
 
 .card1 {
   position: relative;
-  background-color: #38b6ff;
+  background-color: #43277a;
   border-radius: 20px;
   overflow: hidden;
-  color: black;
-  text-shadow: 1px 1px #553791;
+  color: white;
+  text-shadow: 1px 1px black;
+  border: 15px solid #43277a;
 
 }
 
@@ -318,8 +249,13 @@ h3 {
 
 .card-description {
   padding: 5px 25px 20px;
+  font-size: 1em;
 }
 
+iframe{
+width: 100%;
+height: 300px;
+}
 
 /* fin funciones */
 
@@ -331,19 +267,23 @@ h3 {
   align-items: center;
   width: 100%;
   scroll-snap-align: start;
+  text-decoration: none;
 }
 
 .box__form {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  border: 1px #38b6ff solid;
+  border: 1px 1px black;
   height: 300px;
   width: 30%;
   padding: 1%;
-  background-color: #38b6ff;
+  background-color: #43277a;
   gap: 10px;
   align-items: center;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: larger;
 }
 
 
@@ -357,9 +297,15 @@ h3 {
 
 .form__button {
   border-radius: 40px;
-  background-color: white;
+  background-color: #43277a;
   width: 250px;
-  height: 25px;
+  height: 60px;
+  font-family: "Lobster";
+  font-size: x-large;
+  font-weight: bold;
+  border: 2px solid white;
+  color: white;
+  font-style: unset;
 }
 
 
@@ -376,15 +322,15 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #553791;
+  background-color: #43277a;
   width: 100%;
   border-top: 10px #38b6ff solid;
   border-radius: 0 20px 0 0px;
-  color: black;
+  color: #43277a;
   text-align: center;
 }
 
-.footer_fourth h1,
+.footer_fourth h2,
 p {
   background-color: white;
   border-radius: 20px;
@@ -401,115 +347,6 @@ p {
 
 
 /* Teléfonos */
-@media  (max-width:1060px) {
-
-  .section__mobile--second{
-    min-width: 403px;
-  }
-  .main__third {
-    width: 100%;
-    height: 100vh;
-    background-color: #553791;
-  }
-
-  .section__mobile--second {
-
-    display: flex;
-    flex-direction: column;
-  }
-
-
-  /* tarjetas precios*/
-  .card {
-    display: flex;
-    flex-direction: row;
-    background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-    width: 87%;
-    height: 15vh;
-    padding: 1px;
-    text-align: center;
-    color: black;
-    font-size: small;
-    justify-content:space-around;
-  }
-
-  .card .icon {
-    width: 0px;
-    height: 0px;
-  }
-
-  .card .title {
-    font-size: 25px;
-    padding-top: 35px;
-    padding-left: 10px;
-  }
-
-
-  .card .icon svg path {
-    fill: white;
-  }
-
-  .card .features ul {
-    float: right;
-    padding: 10%;
-    margin: 0px;
-    list-style-type: none;
-  }
-
-  .card .features ul li {
-    margin: 10px 0;
-    font-size: 10px;
-  }
-
-  .card .btn {
-    display: block;
-    background: #553791;
-    color: white;
-    padding: 10px 20px;
-    margin: 1px 0;
-    border-radius: 20px;
-    transition: all 200ms ease-in-out;
-    text-decoration: none;
-    width: 25vh;
-    height: 75px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .card .btn:hover {
-    background: #38b6ff;
-  }
-
-  
-
-  .form__textarea {
-    width: 100%;
-    height: 100%;
-    resize: none;
-  
-  }
-
-  .box__form {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    border: 1px #38b6ff solid;
-    height: 300px;
-    width: 70%;
-    padding: 1%;
-    background-color: #38b6ff;
-    gap: 10px;
-    align-items: center;
-  }
-
-
-}
-
-/* Teléfonos */
 @media (max-width:1060px) {
 
   .section__mobile--second {
@@ -519,7 +356,7 @@ p {
   .main__third {
     width: 100%;
     height: 100vh;
-    background-color: #553791;
+    background-color: #43277a;
   }
 
   .section__mobile--second {
@@ -540,7 +377,7 @@ p {
     height: 15vh;
     padding: 1px;
     text-align: center;
-    color: black;
+    color: #43277a;
     font-size: small;
     justify-content: space-around;
   }
@@ -570,12 +407,12 @@ p {
 
   .card .features ul li {
     margin: 10px 0;
-    font-size: 10px;
+    font-size: 5px;
   }
 
   .card .btn {
     display: block;
-    background: #553791;
+    background: #43277a;
     color: white;
     padding: 10px 20px;
     margin: 1px 0;
@@ -590,73 +427,204 @@ p {
     margin-top: 10px;
   }
 
-    .card .btn:hover {
-      background: #38b6ff;
-    }
+  .card .btn:hover {
+    background: #38b6ff;
+  }
 
 
 
-    .form__textarea {
-      width: 100%;
-      height: 100%;
-      resize: none;
-
-    }
-
-    .box__form {
-      display: flex;
-      flex-direction: column;
-      border-radius: 20px;
-      border: 1px #38b6ff solid;
-      height: 300px;
-      width: 70%;
-      padding: 1%;
-      background-color: #38b6ff;
-      gap: 10px;
-      align-items: center;
-    }
-
-    /*  2 pantalla */
-
-    .cards_style-1 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-
-
-    .card1 {
-      display: flex;
-      flex-direction: column;
-      background-color: #38b6ff;
-      border-radius: 20px;
-      color: black;
-      text-shadow: 1px 1px #553791;
-      width: 200px;
-      gap: 25px;
-      margin: 0%;
-      height: 400px;
-      margin-top: 100px;
-      border: #000 1px solid;
-      ;
-    }
-
-
-    .card-title {
-
-      padding: 2px 25px 5px;
-      font-size: 1em;
-
-    }
-
-    .card-description {
-      padding: 5px 25px 20px;
-    }
-
-
-    iframe {
-      width: 100%;
-      height: 100%;
-    }
+  .form__textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
 
   }
+
+  .box__form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px #38b6ff solid;
+    height: 300px;
+    width: 70%;
+    padding: 1%;
+    background-color: #38b6ff;
+    gap: 10px;
+    align-items: center;
+  }
+
+
+}
+
+/* Teléfonos */
+@media (max-width:1060px) {
+
+  .section__mobile--second {
+    min-width: 403px;
+  }
+
+  .main__third {
+    width: 100%;
+    height: 100vh;
+    background-color: #43277a;
+  }
+
+  .section__mobile--second {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* tarjetas precios*/
+  .card {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    width: 87%;
+    height: 15vh;
+    padding: 1px;
+    text-align: center;
+    color: #43277a;
+    font-size: small;
+    justify-content: space-around;
+
+  }
+
+  .card .icon {
+    width: 40px;
+    height: 30px;
+  }
+
+  .card .title {
+    font-size: 35px;
+    padding-top: 35px;
+    padding-left: 10px;
+  }
+
+
+  .card .icon svg path {
+    fill: #43277a;
+  }
+
+  .card .features ul {
+    float: right;
+    padding-left: 35%;
+    margin: 0px;
+    list-style-type: none;
+  }
+
+  .card .features ul li {
+    margin: 10px 0;
+    font-size: 17px;
+    margin: 0;
+  }
+
+  .card .btn {
+    display: block;
+    background: #43277a;
+    color: white;
+    padding: 10px 20px;
+    margin: 1px 0;
+    border-radius: 20px;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+    width: 25vh;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .card .btn:hover {
+    background: #38b6ff;
+    color: #43277a;
+  }
+
+
+
+  .form__textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+
+  }
+
+  .box__form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px #38b6ff solid;
+    height: 300px;
+    width: 70%;
+    padding: 1%;
+    background-color: #43277a;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .form__button:hover {
+    background: #38b6ff;
+    color: #43277a;
+    width: 48%;
+  }
+
+
+  /*  2 pantalla */
+
+  .cards_style-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #38b6ff;
+    border-radius: 20px;
+    color: #43277a;
+    text-shadow: 1px 1px #43277a;
+    width: 200px;
+    gap: 25px;
+    margin: 0%;
+    height: 400px;
+    margin-top: 10px;
+    border: #000 1px solid;
+    height: 500px;
+    width: 110%;
+  }
+
+
+  .card-title {
+
+    padding: 2px 25px 5px;
+    font-size: 1.5em;
+
+  }
+
+  .card-description {
+    padding: 5px 25px 20px;
+    font-size: 18px;
+    padding-top: 0%;
+  }
+
+  .card1 {
+    position: relative;
+    background-color: #43277a;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    text-shadow: 1px 1px black;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+}
