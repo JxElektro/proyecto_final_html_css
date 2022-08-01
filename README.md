@@ -15,3 +15,13 @@ Applicacion ficticia de Agendamientos de servicios de limpieza.
 
 - intente fallidamente hacer responsive la pagina
 
+Comentarios del profesor:
+
+
+el footer debería ser la ultima sección
+
+arreglar ese formulario de contacto, le falto nivelar en nivel con el resto del sitio
+
+en general buena pagina!
+
+buen code
