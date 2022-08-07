@@ -4,7 +4,7 @@ CleanCo.
 Applicacion ficticia de Agendamientos de servicios de limpieza.
 
 ------------------------------------------------------------------
-
+s
 - Creacion del logo mediante Canva.com
 
 - Dividi la pagina en 4 secciones con 
